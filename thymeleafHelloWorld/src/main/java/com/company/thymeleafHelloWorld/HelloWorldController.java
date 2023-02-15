@@ -10,6 +10,15 @@ public class HelloWorldController {
     @GetMapping("/hello")
     public String hello(Model model){
         model.addAttribute("message","Hello World");
+        //we are returning the page
         return "helloworld";
     }
+
+    @GetMapping("/style")
+    public String style(){
+
+        return "add-css-js-demo";
+    }
+
+
 }
